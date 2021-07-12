@@ -1,0 +1,41 @@
+h1, #diary{
+  text-align: center;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+ul{
+  font-size:20px;
+  padding: 0px;
+  text-align: center;
+}
+h1{
+  padding-bottom: 50px;
+  border-bottom: 10px solid green;
+  margin-bottom: 0;
+  font-size: 80px;
+}
+#diary
+{
+  border-left: 10px solid green;
+  border-bottom: 10px solid green;
+}
+#list
+{
+  border-bottom: 10px solid green;
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  #diary
+  {
+    border-left: none;
+  }
+  #list
+  {
+    text-align: center;
+    border-bottom: none;
+  }
+}
