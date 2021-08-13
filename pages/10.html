@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>그들은 무엇을 먹었나?</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <style media="screen">
+    #letter{
+      visibility: hidden;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+        $(document).ready(function(){
+           $("#header").load("date_list.html")
+        });
+  </script>
+</head>
+
+
+<body>
+  <h1><a href="index.html">M & T's KITCHEN</a></h1>
+  <div id=grid>
+
+    <div id=list>
+    <div id="header"><h1>include</h1></div>
+  </div>
+
+  <div id=diary>
+  <h2>8월 11일</h2>
+
+  <p style="margin-top:150px; margin-bottom:100px">
+  <img src="..\2021_08_11\mandoo.jpg" width="40%"><br>
+  <img src="..\2021_08_11\jjajang.jpg" width="40%"><br>
+  <img src="..\2021_08_11\bab.jpg" width="40%"><br>
+  <strong>- 이른 저녁 -</strong><br>
+  <br>더 현대 서울의 호우섬에서 먹은 소롱포와 라구짜장 도삭면, 그리고 닭고기 완자<br><br>
+
+  <input type="button" id="button1" value="의문의 식재료" onclick="button1_click();"><br><br>
+  <p style="margin : 0;">please enter a password</p>
+  <input type="password" id="password" name="password">
+  <input type="button" value="확인" onclick="button2_click();"><br>
+
+  <p id ="letter">
+    -다음주면 직장생활을 시작하는 민진이에게-<br><br><br>
+    요즘 급작스럽게 시작하게된 직장생활에 대해 걱정도 많이 되고<br>
+    준비해야 할 것도 너무 많고 심적으로나 신적으로나 많이 힘들지?<br>
+    그래두 민진이는 맘씨도 착하구 유하니까 잘 적응해 나갈거라 믿어유<br>
+    그리구 내가 항상 옆에서 많이 도와줄게 ㅎㅎ<br>
+    너무 걱정하지말구 담주에 또 맛있는거 먹으러 가자 알았지??<br>
+    집가는길에 세븐일레븐 들러서 먹고싶은거 사서 들어가!<br>
+    사랑해♥<br>
+    <img src="..\2021_08_11\gift.jpg" width="40%" style="margin-top: 30px;"><br>
+  </p>
+  <script>
+    function button1_click(){
+      alert("우리가 궁금해했던 솥밥 속에 바삭바삭한 식재료는 '생강'이였대");
+    }
+
+    var psword = 20200112;
+
+    function button2_click(){
+      var code = document.querySelector('#password').value;
+      if(code == psword){
+        document.querySelector('#letter').style.visibility = 'visible';
+      }
+      else{
+        alert('잘못된 비밀번호 입니둥!')
+      }
+    }
+
+  </script>
+  </p>
+
+  </div>
+  </div>
+
+</body>
