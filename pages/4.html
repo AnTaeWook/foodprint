@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>그들은 무엇을 먹었나?</title>
-    <link rel="stylesheet" href="../css/style.css">
+<head>
+  <meta charset="utf-8">
+  <title>그들은 무엇을 먹었나?</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+        $(document).ready(function(){
+           $("#header").load("date_list.html")
+        });
+  </script>
   </head>
 
 
@@ -12,17 +18,7 @@
     <div id=grid>
 
       <div id=list>
-        <ul>
-          <li><a href="1.html">2021.06.22</a></li>
-          <li><a href="2.html">2021.06.24</a></li>
-          <li><a href="3.html">2021.07.02</a></li>
-          <li><a href="4.html">2021.07.08</a></li>
-          <li><a href="5.html">2021.07.14</a></li>
-          <li><a href="6.html">2021.07.21</a></li>
-          <li><a href="7.html">2021.07.28</a></li>
-          <li><a href="8.html">2021.08.06</a></li>
-          <li><a href="9.html">2021.08.11</a></li>
-        </ul>
+        <div id="header">date_list</div>
       </div>
 
       <div id=diary>
