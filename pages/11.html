@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>그들은 무엇을 먹었나?</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+        $(document).ready(function(){
+           $("#header").load("date_list.html")
+        });
+  </script>
+  <style media="screen">
+  img[usemap] {
+    border: none;
+    height: auto;
+    max-width: 80%;
+    width: auto;
+  }
+  </style>
+</head>
+
+
+<body>
+  <h1><a href="index.html">M & T's KITCHEN</a></h1>
+  <div id=grid>
+    <div id=list>
+    <div id="header">date_list</div>
+  </div>
+
+  <div id=diary>
+  <h2>8월 27일 ~ 8월 28일</h2>
+
+  <p style="margin-top:150px;">
+  <img src="..\pictures/2021_08_27\guk.jpg" width="80%"><br>
+  <img src="..\pictures/2021_08_27\bap.jpg" width="80%"><br>
+  <img src="..\pictures/2021_08_27\mandoo.jpg" width="80%"><br>
+  <img src="..\pictures/2021_08_27\juice.jpg" width="80%"><br>
+  <strong>- 저녁 -</strong><br>
+  <br>영등포 타임스퀘어 딘타이펑에서 먹은 우육탕면, 소고기새우볶음밥, 만두, 한라봉에이드</p>
+
+  <p style="margin-top:150px; margin-bottom:100px">
+  <img src="..\pictures/2021_08_27\waffle.jpg" width="80%"><br>
+  <strong>- 간식 -</strong><br>
+  <br>와플대학에서 사온 딸기와플과 오레오와플</p>
+
+
+  <p style="margin-top:150px; margin-bottom:100px">
+  <img src="..\pictures/2021_08_27\jja.jpg" width="80%"><br>
+  <img src="..\pictures/2021_08_27\tang.jpg" width="80%"><br>
+  <strong>- 점심 -</strong><br>
+  <br>영등포 홍콩반점에서 먹은 짜장면과 찹쌀탕수육</p>
+
+
+  <p style="margin-top:150px; margin-bottom:100px">
+  <img src="..\pictures/2021_08_27\back.jpg" width="80%"><br>
+  <strong>- 간식 -</strong><br>
+  <br>신도림 디큐브 백미담에서 먹은 초코아이스크림과 밀크스무디</p>
+
+  </div>
+
+</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+<script>
+(function($){
+$(document).ready(function(e) {
+$('img[usemap]').rwdImageMaps();
+});
+})(jQuery);
+</script>
+</html>
