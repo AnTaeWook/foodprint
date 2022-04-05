@@ -1,2 +1,2 @@
 # foodprint
-<br><br>HTML & CSS & Javascript 기초 연습
+<br>HTML & CSS & Javascript 기초 연습
