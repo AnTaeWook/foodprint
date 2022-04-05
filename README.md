@@ -1,2 +1,2 @@
 # foodprint
-<br><br>조밍딩씨
+<br><br>HTML & CSS & Javascript 기초 연습
